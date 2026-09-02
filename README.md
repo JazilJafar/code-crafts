@@ -1,1 +1,3 @@
-This repo help your web development journey by providing a collection of useful resources, tutorials, and code snippets. Whether you're a beginner or an experienced developer, you'll find valuable information to enhance your skills and streamline your workflow.
+# CODE CRAFTS
+
+This project is a combination of several small projects and display it in a website. Showcasing them in a good and interactive style.
