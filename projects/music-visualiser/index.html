@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Visualiser</title>
+    <link rel="stylesheet" href="../../shared/reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Music Visualiser</h1>
+
+        <label class="picker">
+            Choose a track
+            <input type="file" id="file" accept="audio/*">
+        </label>
+
+        <canvas id="canvas"></canvas>
+
+        <audio id="audio" controls></audio>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

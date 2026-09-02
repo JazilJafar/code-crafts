@@ -1,0 +1,50 @@
+body {
+    background: #17171d;
+    color: #ffff;
+    font-family: system-ui, sans-serif;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+main {
+    width: min(900px, 900vw);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.picker {
+    border: 1px solid #292d43;
+    border-radius: 999px;
+    padding: 0.6rem 1.4rem;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.picker:hover {
+    border-color: #4c5886;
+    background: #17171d;
+}
+
+.picker input {
+    display: none;
+}
+
+#canvas {
+    width: 100%;
+    height: 320px;
+    background: #070812;
+    border-radius: 12px;
+}
+
+audio {
+    width: 100%;
+}
