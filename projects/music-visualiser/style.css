@@ -49,3 +49,20 @@ h1 {
 audio {
     width: 100%;
 }
+
+select {
+    padding: 10px 14px;
+    border: 1px solid rgba(34, 211, 238, 0.3);
+    border-radius: 10px;
+    outline: none;
+    color: #eafcff;
+    background: rgba(12, 12, 30, 0.9);
+    font: inherit;
+    cursor: pointer;
+}
+
+select:hover,
+select:focus {
+    border-color: #22d3ee;
+    box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.12);
+}
