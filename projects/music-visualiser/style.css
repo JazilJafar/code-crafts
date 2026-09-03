@@ -1,5 +1,5 @@
 body {
-    background: #17171d;
+    background: #060434;
     color: #ffff;
     font-family: system-ui, sans-serif;
     display: grid;
@@ -27,11 +27,12 @@ h1 {
     padding: 0.6rem 1.4rem;
     cursor: pointer;
     transition: border-color 0.2s, background 0.2s;
+    background: #0a5468
 }
 
 .picker:hover {
     border-color: #4c5886;
-    background: #17171d;
+    background: #260984;
 }
 
 .picker input {
@@ -41,7 +42,7 @@ h1 {
 #canvas {
     width: 100%;
     height: 320px;
-    background: #070812;
+    background: #0b1826;
     border-radius: 12px;
 }
 

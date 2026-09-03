@@ -55,7 +55,7 @@ function draw() {
         const value = count ? sum / count : 0;
         const barHeight = (value / 255) * h;
 
-        ctx.fillStyle = `hsl(${200 + (i / BAR_COUNT) * 120} 90% 60%)`;
+        ctx.fillStyle = `hsl(${300 + (i / BAR_COUNT) * 320} 90% 60%)`;
         ctx.fillRect(i* barWidth, h - barHeight, barWidth - 2, barHeight);
     }
 }
