@@ -4,29 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Visualiser</title>
-    <link rel="stylesheet" href="../../shared/reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <h1>Music Visualiser</h1>
 
-        <label class="picker">
-            Choose a track
-            <input type="file" id="file" accept="audio/*">
-        </label>
+<div class="app">
+    <div class="tabs">
+        <button class="tab active" data-mode="bar">Bar Visualiser</button>
+        <button class="tab" data-mode="circle">Circle Visualiser</button>
+    </div>
 
-        <label for="visualiserMode">Visualiser</label>
+    <div class="visualiser" id="visualiser"></div>
 
-        <select id="visualiserMode">
-            <option value="bars">Bar visualiser</option>
-            <option value="circle">Circular visualiser</option>
-        </select>
+    <div class="controls">
+        <button class="play-btn" id="playBtn" aria-label="Play">
+            <svg id="playIcon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </button>
 
-        <canvas id="canvas"></canvas>
+        <div class="seek-wrap">
+            <input type="range" class="seek-bar" id="seekBar" min="0" max="100" value="0" step="0.1" aria-label="Seek"/>
+            <div class="time-row">
+                <span id="curTime">0:00</span>
+                <span id="durTime">0:00</span>
+            </div>
+        </div>
 
-        <audio id="audio" controls></audio>
-    </main>
-    <script src="script.js"></script>
+        <div class="vol-wrap">
+            <button class="vol-btn" id="volBtn" aria-label="Volume">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 10v4h15 5V5L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4.03v8.05A4.49 4.49 0 0 0 16.5 12z"/></svg>
+            </button>
+            <div class="vol-popup" id="volPopup">
+                <input type="range" class="vol-slider" id="volSlider" min="0" max="100" value="75" orient="vertical" aria-label="Volume level"/>
+                <span class="vol-value" id="volValue">75</span>
+            </div>
+        </div>
+    </div>
+
+    <button class="choose-btn" id="chooseBtn">Choose a Song</button>
+    <input type="file" id="fileInput" accept="audio/*"/>
+    <audio id="audioPlayer" crossorigin="anonymous"></audio>
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
